@@ -1,0 +1,26 @@
+# Dependencias
+node_modules/
+.pnpm-store/
+
+# Entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Artefactos de archify: se versiona el candidato y el HTML final,
+# no las corridas de revisión ni los recibos de validación.
+.archify/**/review-*/
+.archify/**/*.finalize-summary.json
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Logs
+*.log
